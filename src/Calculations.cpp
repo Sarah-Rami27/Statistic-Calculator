@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <string>
 #include <iomanip>
-#include "Calculations.h"
+#include "../header/Calculations.h"
 
 using namespace std;
 
@@ -23,7 +23,7 @@ void Calculations::fillArray(){
     string dataNum;
 
     cin >> dataNum;
-    while(dataNum != "q"){
+    while(dataNum != "d"){
         data[arrSize] = stod(dataNum);
         ++arrSize;
         cin >> dataNum;
@@ -67,6 +67,8 @@ void Calculations::calculations(){
 
     Q1 = calculateQ1();
     cout << "\nQ1: " << Q1 << endl;
+
+    cout << "\nQ2: " << median << endl;
 
     Q3 = calculateQ3();
     cout << "\nQ3: " << Q3 << endl;
