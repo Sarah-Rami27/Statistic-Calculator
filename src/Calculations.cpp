@@ -47,7 +47,7 @@ void Calculations::calculations(){
     median = calculateMedian();
     cout << "\nMedian: " << median << endl;
 
-    mode = calculateMode(); //mode given is the "smallest" mode (e.g. 1 1 1 2 2 2 -- 1 would be mode here)
+    mode = calculateMode(); 
     cout << "\nMode: ";
     if(mode == false){
         cout << "This data set contains no mode." << endl;
